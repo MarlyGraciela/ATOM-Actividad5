@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta name="Marly" content="Etiquetas en HTML">
+    <title>Etiquetas HTML</title>
+
+    <link rel="stylesheet" href="styles/estilos.css">
+
+    <!-- Icono -->
+      <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+      <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+      <link rel="manifest" href="/manifest.json">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+      <meta name="theme-color" content="#ffffff">
+
+  </head>
+  <body>
+    <header align="center">
+      <h1>Etiquetas de HTML </h1>
+    </header>
+
+<section>
+  <h2 align="center"> Etiqueta < dl > </h2>
+  <p> <h3><em>DESCRIPCIÓN:</em></h3>
+    Representa una lista descriptiva.
+    Algunos usos son:
+    <ul>
+      <li> Implementar un glosario </li>
+      <li> Desplegar metadatos (lista de pares llave-valor). </li>
+    </ul>
+    <i>Nota:</i> No use este elemento (ni elementos < ul >) solo para crear sangría en una página. Si bien funciona, es una mala práctica y obscurece el signinifcado de las listas descriptivas.
+    <br>Encierra una lista de grupos de términos (con el uso del elemento < dt >) y descripciones (con elementos < dd >). <br>
+
+  </p>
+
+  <p> <h3>Ejemplo:</h3>
+    <ul>
+      <li>Un término y su descripción:
+        <dl> < dl>
+          <dt> < dt > Firefox< /dt > </dt>
+          <dd> < dd >
+            A free, open source, cross-platform, graphical web browser developed by the Mozilla Corporation and hundreds of volunteers.
+          </dd>     < dd >
+
+      <li>Múltiples términos con una descripción
+        <dl>< dl>
+  <dt>< dt >Firefox < /dt></dt>
+  <dt>< dt >Mozilla Firefox< / dt></dt>
+  <dt>< dt >Fx< / dt></dt>
+  <dd>< dd >
+    A free, open source, cross-platform, graphical web browser developed by the
+    Mozilla Corporation and hundreds of volunteers.
+  </dd>< /dd >
+</dl>
+      </li>
+
+        <dl>
+  <dt>Firefox</dt>
+  <dd>
+    A free, open source, cross-platform, graphical web browser developed by the
+    Mozilla Corporation and hundreds of volunteers.
+  </dd>
+
+  <dl>
+  <dt>Firefox</dt>
+  <dt>Mozilla Firefox</dt>
+  <dt>Fx</dt>
+  <dd>
+    A free, open source, cross-platform, graphical web browser developed by the
+    Mozilla Corporation and hundreds of volunteers.
+  </dd>
+
+  <!-- Other terms and descriptions -->
+</dl>
+      </li>
+    </ul>
+  </p>
+
+
+</section>
+
+<section>
+  <h2 align="center"> Etiqueta < dt > </h2>
+  <p> <h3><em>DESCRIPCIÓN:</em></h3>
+    Especifica un término en una descripción o lista de definiciones, y como tal debe utilizarse dentro de un elemento < dl > Es usualmente seguido por un elemento < dd >; sin embargo, múltiples elementos < dt > en un renglón indican diferentes términos los cuales todos son definidos por el siguiente elemento < dd >.
+  </p>
+
+  <p> <h3>Ejemplo:</h3>
+    En la Etiqueta < dl > pudimos observar su función y su ejemplo.
+   </p>
+</section>
+
+<section>
+  <h2 align="center"> Etiqueta < dd > </h2>
+  <p> <h3><em>DESCRIPCIÓN:</em></h3>
+    Provee detalles acerca de o la definición de un término precedente (< dt >) en una lista de descripciones (< dl >).
+   </p>
+
+  <p> <h3>Ejemplo:</h3>
+    En la Etiqueta < dl > pudimos observar su función y su ejemplo.
+  </p>
+</section>
+
+<section>
+  <h2 align="center"> Etiqueta < blockquote > </h2>
+  <p> <h3><em>DESCRIPCIÓN:</em></h3>
+    Crea citas en bloque, marca las citas a otros autores o documentos.Requiere de las etiquetas de apertura y cierre.
+   </p>
+
+  <p> <h3>Ejemplo:</h3>
+    < blockquote cite =' http://html.conclase.net/w3c/html401...def-BLOCKQUOTE ' >
+  < p >
+    < strong >Nota.< /strong > Recomendamos que las implementaciones de hojas
+    de estilo porporcionen un mecanismo para insertar signos de puntuación de citas
+    antes y después de una cita delimitada por un BLOCKQUOTE de un modo apropiado según
+    el contexto del idioma actual y el grado de anidamiento de las citas.
+  < / p>
+< / blockquote>
+
+<blockquote cite='http://html.conclase.net/w3c/html401...def-BLOCKQUOTE'>
+  <p>
+    <strong>Nota.</strong> Recomendamos que las implementaciones de hojas
+    de estilo porporcionen un mecanismo para insertar signos de puntuación de citas
+    antes y después de una cita delimitada por un BLOCKQUOTE de un modo apropiado según
+    el contexto del idioma actual y el grado de anidamiento de las citas.
+  </p>
+</blockquote>
+   </p>
+
+</section>
+
+<section>
+  <h2 align="center"> Etiqueta < q > </h2>
+  <p> <h3><em>DESCRIPCIÓN:</em></h3>
+    Indica que el texto adjunto es una cita corta en línea. La mayoría de los navegadores modernos implementan esto rodeando el texto entre comillas. Este elemento está destinado a citas breves que no requieren saltos de párrafo; para citas de bloque independiente, utiliza el elemento < blockquote >.
+  </p>
+
+  <p> <h3>Ejemplo:</h3>
+    < p >When Dave asks HAL to open the pod bay door, HAL answers: <q cite="https://www.imdb.com/title/tt0062622/quotes/qt0396921">I'm sorry, Dave. I'm afraid I can't do that.< /q>< /p>
+
+    <p>When Dave asks HAL to open the pod bay door, HAL answers: <q cite="https://www.imdb.com/title/tt0062622/quotes/qt0396921">I'm sorry, Dave. I'm afraid I can't do that.</q></p>
+   </p>
+ </section>
+
+<section>
+  <h2 align="center"> Etiqueta < cite > </h2>
+  <p> <h3><em>DESCRIPCIÓN:</em></h3>
+    Marca una referencia a una fuente, o el autor de un texto citado. Requiere etiqueta de apertura y cierre.
+   </p>
+
+  <p> <h3>Ejemplo:</h3>
+    < p > < cite > Galileo < / cite> dijo: "... y sin embargo, se mueve." < /p>
+    <p> <cite>Galileo</cite> dijo: "... y sin embargo, se mueve." </p>
+  </p>
+</section>
+
+<section>
+  <h2 align="center"> Etiqueta < abbr > </h2>
+  <p> <h3><em>DESCRIPCIÓN:</em></h3>
+    Representa una abreviación o acrónimo; el atributo opcional title puede ampliar o describir la abreviatura. Si está presente, el atributo title debe contener la descripción completa y nada más.
+   </p>
+
+  <p> <h3>Ejemplo:</h3>
+    < p >I do < abbr title="Hypertext Markup Language " >HTML< /abbr >< /p > br
+    <p>I do <abbr title="Hypertext Markup Language">HTML</abbr></p>
+   </p>
+</section>
+
+<section>
+  <h2 align="center"> Etiqueta < address > </h2>
+  <p> <h3><em>DESCRIPCIÓN:</em></h3>
+    Aporta información de contacto para su < article > más cercano o ancestro < body >; en el último caso lo aplica a todo el documento.
+    <ul>
+      <li>Para representar una dirección arbitraria, una que no esté relacionada con la información de contacto, utiliza un elemento < p > en lugar del elemento < address >. </li>
+      <li>Este elemento no debe contener más información que la información de contacto, como una fecha de publicación (que pertenece al elemento < time >). </li>
+      <li>Normalmente un elemento < address > puede ser colocado dentro del elemento < footer > de la sección actual, si lo hay. </li>
+    </ul>
+   </p>
+
+  <p> <h3>Ejemplo:</h3>
+    < address > <br>
+   You can contact author at < a href="http://www.somedomain.com/contact" >www.somedomain.com< /a>.< br >
+   If you see any bugs, please <a href="mailto:webmaster@somedomain.com">contact webmaster</a>.<br>
+   You may also want to visit us:<br>
+   Mozilla Foundation<br>
+   1981 Landings Drive<br>
+   Building K<br>
+   Mountain View, CA 94043-0801<br>
+   USA <br> <br>
+ </address>
+ <address>
+   You can contact author at <a href="http://www.somedomain.com/contact">www.somedomain.com</a>.<br>
+   If you see any bugs, please <a href="mailto:webmaster@somedomain.com">contact webmaster</a>.<br>
+   You may also want to visit us:<br>
+   Mozilla Foundation<br>
+   1981 Landings Drive<br>
+   Building K<br>
+   Mountain View, CA 94043-0801<br>
+   USA
+ </address>
+  </p>
+</section>
+
+<section>
+  <h2 align="center"> Etiqueta < sub > </h2>
+  <p> <h3><em>DESCRIPCIÓN:</em></h3>
+Define un fragmento de texto que se debe mostrar, por razones tipográficas, más bajo, y generalmente más pequeño, que el tramo principal del texto, es decir, en subíndice.
+<ul>
+  <li>Este elemento debe ser utilizado sólo por razones tipográficas, es decir, cambiar la posición del texto cambia su significado como en matemática (por ejemplo la fórmula matemática t2, aunque se debe considerar el uso de MathML) o fórmulas químicas (por ejemplo H2O).</li>
+  <li>Este elemento no debe ser utilizado para propósitos meramente visuales, como el estilo del logo del software LaTeX</li>
+</ul>
+   </p>
+
+  <p> <h3>Ejemplo:</h3>
+< p >La fórmula química de agua: H < sub > 2 < /sub >O< /p>
+<p>La fórmula química de agua: H<sub>2</sub>O</p>
+  </p>
+</section>
+
+<section>
+  <h2 align="center"> Etiqueta < sup > </h2>
+  <p> <h3><em>DESCRIPCIÓN:</em></h3>
+    Define un fragmento de texto que se debe mostrar, por razones tipográficas, más alto, y generalmente más pequeño, que el tramo principal del texto, es decir, en superíndice.
+    <ul>
+      <li>Este elemento debe ser utilizado sólo por razones tipográficas, es decir, cambiar la posición del texto cambia su significado como en matemática (por ejemplo la fórmula matemática f <sup>4</sup>, aunque se debe considerar el uso de MathML) o en las abreviaturas francesas (por ejemplo M <sup>lle</sup>, M <sup>me</sup> or C <sub>ie</sup> ).</li>
+      <li>Este elemento también se puede encontrar siguiendo palabras o frases. Estas anotaciones indican una entrada bibliográfica y se conocen como "notas al pie."</li>
+      <li>Este elemento no debe ser utilizado para propósitos meramente visuales, como el estilo del logo del software LaTeX</li>
+    </ul>
+  </p>
+
+  <p> <h3>Ejemplo:</h3>
+    < p >Este texto es < sup >superíndice< /sup >< /p >
+    <p>Este texto es <sup>superíndice</sup></p>
+
+    < p >Notas al pie< sup >1< /sup>< /p>
+    <p>Notas al pie<sup>1</sup></p>
+   </p>
+</section>
+
+<section>
+  <h2 align="center"> Etiqueta < code > </h2>
+  <p> <h3><em>DESCRIPCIÓN:</em></h3>
+    Es el apropiado para marcar el código de un programa. Requiere de etiqueta de apertura y cierre.
+   </p>
+
+  <p> <h3>Ejemplo:</h3>
+    < code > <br>
+ #include main() { for(;;) { printf ("Hello World!\n"); } }
+<br>< /code ><br> <br>
+<code>
+ #include main() { for(;;) { printf ("Hello World!\n"); } }
+</code>
+   </p>
+</section>
+
+<section>
+  <h2 align="center"> Etiqueta < pre > </h2>
+  <p> <h3><em>DESCRIPCIÓN:</em></h3>
+     Representa texto preformateado. El texto en este elemento típicamente se muestra en una fuente fija, no proporcional, exactamente como es mostrado en el archivo. Los espacios dentro de este elemento también son mostrados como están escritos.
+   </p>
+
+  <p> <h3>Ejemplo:</h3>
+    < ! -- Un poco de codigo CSS -- > <br>
+    < pre > <br>
+    body{<br>
+      color:  red;<br>
+    }<br>
+    a   {<br>
+      color:green;<br>
+    }<br>
+    < /pre> <br><br>
+
+    <!-- Un poco de codigo CSS -->
+<pre>
+body{
+  color:  red;
+}
+a   {
+  color:green;
+}
+</pre>
+   </p>
+</section>
+
+<section>
+  <h2 align="center"> Etiqueta < var > </h2>
+  <p> <h3><em>DESCRIPCIÓN:</em></h3>
+     Declara una variable, opcionalmente inicializándola con un valor.
+     Las declaraciones de variables, donde sea que ocurran, son procesadas antes de que cualquier otro código sea ejecutado. El ámbito de una variable declarada con la palabra reservada var es su contexto de ejecución en curso, que puede ser la función que la contiene o, para las variables declaradas afuera de cualquier función, un ámbito global. Si re-declaras una variable Javascript, esta no perderá su valor.
+     Asignar un valor a una variable no declarada implica crearla como variable global (se convierte en una propiedad del objeto global) cuando la asignación es ejecutada.
+  </p>
+
+  <p> <h3>Ejemplo:</h3>
+    var a = 0, b = 0; <br> <br>
+
+    var a = 'A';<br>
+var b = a; <br><br>
+
+// Equivalente a: <br><br>
+
+var a, b = a = 'A';
+   </p>
+</section>
+
+<section>
+  <h2 align="center"> Etiqueta < kbd > </h2>
+  <p> <h3><em>DESCRIPCIÓN:</em></h3>
+  Marca el texto que debe introducir el usuario.
+ </p>
+
+  <p> <h3>Ejemplo:</h3>
+    < p > <br>
+  Si está conforme escriba < kbd >sí< /kbd >. Si no, pulse < kbd > esc < /kbd > <br>
+  < /p>
+  <p>
+  Si está conforme escriba <kbd>sí</kbd>. Si no, pulse <kbd>esc</kbd>
+  </p>
+ </p>
+</section>
+
+<section>
+  <h2 align="center"> Etiqueta < samp > </h2>
+  <p> <h3><em>DESCRIPCIÓN:</em></h3>
+   Señala lo que es una salida de un programa.
+   Se utiliza para incluir texto en línea que representa una muestra (o cita) de la salida de un programa de ordenador. El contenido de esta etiqueta es renderizado generalmente usando la tipografía monoespaciada por defecto del navegador.
+ </p>
+
+  <p> <h3>Ejemplo:</h3>
+    < p > <br>
+  ... entonces aparecerá una ventana con el mensaje: < samp >Hola mundo< /samp ><br>
+  < /p >
+  <p>
+  ... entonces aparecerá una ventana con el mensaje: <samp>Hola mundo</samp>
+  </p>
+
+  < p >I was trying to boot my computer, but I got this hilarious message:< /p >
+
+< p >< samp >Keyboard not found <br>Press F1 to continue< /samp >< /p >
+<p>I was trying to boot my computer, but I got this hilarious message:</p>
+
+<p><samp>Keyboard not found <br>Press F1 to continue</samp></p>
+
+ </p>
+</section>
+
+<section>
+  <h2 align="center"> Etiqueta < time > </h2>
+  <p> <h3><em>DESCRIPCIÓN:</em></h3>
+  Representa un periodo específico en el tiempo. Puede incluir el atributo datetime para convertir las fechas en un formato interno legible por un ordenador, permitiendo mejores resultados en los motores de búsqueda o características personalizadas como recordatorios.
+  Puede representar uno de los contenidos siguientes:
+  <ul>
+    <li>Una hora en formato de 24 horas</li>
+    <li>Una fecha precisa en el Calendario Gregoriano (con hora y zona horaria opcionales)</li>
+    <li>Un periodo de tiempo válido</li>
+  </ul>
+</p>
+
+  <p> <h3>Ejemplo:</h3>
+    < p >The Cure will be celebrating their 40th anniversary on < time datetime = " 2018-07-07 " >July 7< /time > in London's Hyde Park.</p>
+    < p >The concert starts at < time datetime = "20:00" >20:00< /time > and you'll be able to enjoy the band for at least < time datetime= "PT2H30M" > 2h 30m< /time >.< /p >
+    <br><br>
+    <p>The Cure will be celebrating their 40th anniversary on <time datetime="2018-07-07">July 7</time> in London's Hyde Park.</p>
+
+<p>The concert starts at <time datetime="20:00">20:00</time> and you'll be able to enjoy the band for at least <time datetime="PT2H30M">2h 30m</time>.</p>
+  </p>
+</section>
+
+
+  </body>
+</html>
